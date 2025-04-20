@@ -80,3 +80,43 @@ Initialize Grid
 │   └── Movement Cost
 └── (Optional) Add Navigation Tags or AI Flags
 ```
+
+# Grid System Example
+
+This document describes a grid-based system for representing tactical or simulation environments. Each cell holds key data about terrain, occupancy, movement cost, and entities.
+
+---
+
+## Grid Cell Structure
+
+```plaintext
+Grid[row][col] = Cell {
+    occupied: bool
+    terrainType: "grass" | "water" | "mountain"
+    movementCost: number
+    entity: reference or null
+}
+```
+
+```
+G = Grass (movement cost: 1)
+W = Water (movement cost: ∞ or impassable)
+M = Mountain (movement cost: 3)
+O = Occupied
+. = Empty
+E = Entity present
+
++----+----+----+----+----+
+| G. | G. | W. | M. | G. |
++----+----+----+----+----+
+| G. | E. | G. | M. | G. |
++----+----+----+----+----+
+| G. | G. | G. | G. | G. |
++----+----+----+----+----+
+| M. | G. | G. | G. | G. |
++----+----+----+----+----+
+| W. | G. | G. | E. | 
+
+```
+
+
