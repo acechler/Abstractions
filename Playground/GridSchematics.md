@@ -119,4 +119,32 @@ E = Entity present
 
 ```
 
+# Grid [1][1]
+```json
+{
+  "occupied": true,
+  "terrainType": "grass",
+  "movementCost": 1,
+  "entity": "Knight"
+}
 
+```
+# Grid [0][2]
+```json
+{
+  "occupied": false,
+  "terrainType": "water",
+  "movementCost": 9999,
+  "entity": null
+}
+
+```
+# Grid [4][3]
+```json
+{
+  "occupied": true,
+  "terrainType": "grass",
+  "movementCost": 1,
+  "entity": "Goblin"
+}
+```
