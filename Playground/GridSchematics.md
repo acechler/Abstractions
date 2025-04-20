@@ -19,8 +19,8 @@ Grid[row][col] = Cell {
     entity: reference or null
 }
 ```
-Customize Terrain
 
+### Customize Terrain
 ```
 grid[3][5].terrainType = "water"
 grid[3][5].movementCost = 1000        // water is impassable
