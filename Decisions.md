@@ -37,3 +37,14 @@ FUNCTION CalculateDistance(a, b)
 END FUNCTION
 ```
 
+### Pseudocode: Grid
+
+```
+FUNCTION IsEnemyInRangeGrid(selfTile, enemyTile, rangeTiles)
+    dx = AbsoluteValue(selfTile.x - enemyTile.x)
+    dy = AbsoluteValue(selfTile.y - enemyTile.y)
+    RETURN (dx + dy) <= rangeTiles  // Manhattan distance
+END FUNCTION
+```
+
+
