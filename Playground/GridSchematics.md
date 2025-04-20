@@ -19,7 +19,7 @@ Grid[row][col] = Cell {
     entity: reference or null
 }
 ```
-Customize Terraion
+Customize Terrain
 
 ```
 grid[3][5].terrainType = "water"
