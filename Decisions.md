@@ -1,4 +1,7 @@
+# Decision Tree
 
+
+AI Tree
 
 ```
 Enemy in Range?
@@ -16,3 +19,7 @@ Enemy in Range?
         ├── Yes → Use Ability on High Value Target
         └── No → Continue Standard Attack
 ```
+
+determining whether an enemy is “in range” depends on how the game or simulation defines:
+	•	Range mechanics (e.g., weapon distance, vision radius)
+	•	Entity positioning (e.g., grid, 3D coordinates)
